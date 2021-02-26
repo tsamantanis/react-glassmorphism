@@ -1,6 +1,3 @@
-/// <reference types="react" />
-interface Props {
-    text: string;
-}
-export declare const ExampleComponent: ({ text }: Props) => JSX.Element;
-export {};
+import Card from "./Card";
+import Button from "./Button";
+export { Card, Button };

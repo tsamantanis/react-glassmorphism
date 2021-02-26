@@ -1,10 +1,16 @@
-// import React from 'react'
-
-import { ExampleComponent } from 'react-glassmorphism'
+import { Card, Button } from 'react-glassmorphism'
 import 'react-glassmorphism/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+    return (
+        <div style={{background: "darkblue", padding: "5rem"}}>
+            <Card>
+                <h1>Hello</h1>
+                <p>This is an example</p>
+            </Card>
+            <Button text="Click me" />
+        </div>
+    )
 }
 
 export default App
