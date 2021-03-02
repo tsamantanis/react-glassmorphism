@@ -2,12 +2,12 @@
 
 > A react UI component library for glassmorphic components
 
-[![NPM](https://img.shields.io/npm/v/react-glassmorphism.svg)](https://www.npmjs.com/package/react-glassmorphism) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@tsamantanis/react-glassmorphism.svg)](https://www.npmjs.com/package/@tsamantanis/react-glassmorphism) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-glassmorphism
+npm install --save @tsamantanis/react-glassmorphism
 ```
 
 ## Usage

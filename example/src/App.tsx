@@ -1,5 +1,5 @@
-import { Card, Button } from 'react-glassmorphism'
-import 'react-glassmorphism/dist/index.css'
+import { Card, Button } from '@tsamantanis/react-glassmorphism'
+import '@tsamantanis/react-glassmorphism/dist/index.css'
 
 const App = () => {
     return (
