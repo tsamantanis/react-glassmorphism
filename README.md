@@ -15,12 +15,12 @@ npm install --save react-glassmorphism
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-glassmorphism'
+import Button from 'react-glassmorphism'
 import 'react-glassmorphism/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Button text="Click me" />
   }
 }
 ```
