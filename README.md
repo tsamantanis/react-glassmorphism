@@ -15,8 +15,8 @@ npm install --save @tsamantanis/react-glassmorphism
 ```tsx
 import React, { Component } from 'react'
 
-import Button from 'react-glassmorphism'
-import 'react-glassmorphism/dist/index.css'
+import Button from '@tsamantanis/react-glassmorphism'
+import '@tsamantanis/react-glassmorphism/dist/index.css'
 
 class Example extends Component {
   render() {
