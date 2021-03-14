@@ -43,8 +43,8 @@ const StyledCustomCard = styled.div(_t$1 || (_t$1 = _$1`
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(${0});
         -webkit-backdrop-filter: blur(${0});
-        border-radius: 10px;
-        color: white;
+        border-radius: ${0};
+        color: ${0};
         box-shadow: inset 0px 39px 56px -36px rgba(255, 255, 255, 0.5),
         inset 0px 1px 4px 0px ${0},
         inset 0px -82px 68px -64px ${0},
@@ -59,7 +59,7 @@ const StyledCustomCard = styled.div(_t$1 || (_t$1 = _$1`
         inset 0px 4px 18px 0px ${0},
         inset 0px 1px 40px 0px ${0},
         inset 0px 1px 40px 0px ${0};
-    `), props => `${props.blur}px`, props => `${props.blur}px`, props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.2), props => hexToRgbA(props.color, 0.2), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.3), props => hexToRgbA(props.color, 0.2), props => hexToRgbA(props.color, 0.2));
+    `), props => `${props.blur}px`, props => `${props.blur}px`, props => `${props.borderRadius ? props.borderRadius : 10}px`, props => `${props.color ? props.color : 'white'}`, props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.2), props => hexToRgbA(props.effectColor, 0.2), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.3), props => hexToRgbA(props.effectColor, 0.2), props => hexToRgbA(props.effectColor, 0.2));
 
 const CustomCard = props => {
   console.log(props);

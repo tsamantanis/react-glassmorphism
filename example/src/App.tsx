@@ -22,16 +22,29 @@ const App = () => {
             </div>
             <h1>Custom Cards</h1>
             <div className="container">
-                <CustomCard color="#C780FF" blur={10}>
+                <CustomCard
+                    effectColor="#C780FF"
+                    blur={10}
+                    borderRadius={0}
+                >
                     <h1>Hello</h1>
                     <p>This is an example</p>
                 </CustomCard>
-                <CustomCard color="#FFAF5C" blur={10}>
+                <CustomCard
+                    effectColor="#FFAF5C"
+                    blur={10}
+                    borderRadius={10}
+                >
                     <h5>SUBHEADING</h5>
                     <h1>Heading</h1>
                     <p>This is another example</p>
                 </CustomCard>
-                <CustomCard color="#00E4E4" blur={10}>
+                <CustomCard
+                    effectColor="#00E4E4"
+                    color="dark"
+                    blur={10}
+                    borderRadius={20}
+                >
                     <h1>Lorem Ipsum</h1>
                     <p>Quidem est iste illum atque molestiae. Non libero qui pariatur fugit qui quia ipsa. Qui optio vero neque similique totam aut.</p>
                 </CustomCard>

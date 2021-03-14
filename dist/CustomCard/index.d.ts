@@ -1,8 +1,9 @@
 import * as React from 'react';
 interface CustomCardProps {
-    border?: boolean;
+    borderRadius?: number;
     blur?: number;
-    color: string;
+    color?: string;
+    effectColor: string;
     content?: HTMLElement;
 }
 declare const CustomCard: React.FC<CustomCardProps>;

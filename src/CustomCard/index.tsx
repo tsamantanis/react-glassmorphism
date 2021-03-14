@@ -2,10 +2,11 @@ import * as React from 'react'
 import StyledCustomCard from './styles';
 
 interface CustomCardProps {
-  border?: boolean,
-  blur?: number,
-  color: string,
-  content?: HTMLElement
+    borderRadius?: number,
+    blur?: number,
+    color?: string,
+    effectColor: string,
+    content?: HTMLElement
 }
 
 const CustomCard: React.FC<CustomCardProps> = (props) => {

@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 interface StyledCustomCardProps {
-    border?: boolean,
+    borderRadius?: number,
     blur?: number,
-    color: string,
+    color?: string,
+    effectColor: string,
 }
 
 function hexToRgbA(hexCode: string, opacity: number): string {
@@ -27,21 +28,21 @@ const StyledCustomCard = styled.div<StyledCustomCardProps>`
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(${(props: StyledCustomCardProps) => `${props.blur}px`});
         -webkit-backdrop-filter: blur(${(props: StyledCustomCardProps) => `${props.blur}px`});
-        border-radius: 10px;
-        color: white;
+        border-radius: ${(props: StyledCustomCardProps) => `${props.borderRadius ? props.borderRadius : 10}px`};
+        color: ${(props: StyledCustomCardProps) => `${props.color ? props.color : 'white'}`};
         box-shadow: inset 0px 39px 56px -36px rgba(255, 255, 255, 0.5),
-        inset 0px 1px 4px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px -82px 68px -64px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px 98px 100px -48px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px 4px 18px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.2)},
-        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.2)};
+        inset 0px 1px 4px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px -82px 68px -64px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px 98px 100px -48px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px 4px 18px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.2)},
+        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.2)};
         -webkit-box-shadow: inset 0px 39px 56px -36px rgba(255, 255, 255, 0.5),
-        inset 0px 1px 4px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px -82px 68px -64px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px 98px 100px -48px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px 4px 18px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.3)},
-        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.2)},
-        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.color, 0.2)};
+        inset 0px 1px 4px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px -82px 68px -64px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px 98px 100px -48px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px 4px 18px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.3)},
+        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.2)},
+        inset 0px 1px 40px 0px ${(props: StyledCustomCardProps) => hexToRgbA(props.effectColor, 0.2)};
     `
 export default StyledCustomCard;
