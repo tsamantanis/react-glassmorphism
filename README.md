@@ -24,12 +24,29 @@ import Button from '@tsamantanis/react-glassmorphism'
 import '@tsamantanis/react-glassmorphism/dist/index.css'
 
 class Example extends Component {
-  render() {
-    return <Button text="Click me" />
-  }
+    render() {
+        return <Button text="Click me" />
+    }
 }
 ```
 
+```tsx
+import React, { Component } from 'react'
+
+import CustomCard from '@tsamantanis/react-glassmorphism'
+import '@tsamantanis/react-glassmorphism/dist/index.css'
+
+class Example extends Component {
+    render() {
+        return (
+            <CustomCard color="#C780FF" blur={10}>
+                <h1>Hello</h1>
+                <p>This is an example</p>
+            </CustomCard>
+        )
+    }
+}
+```
 ## License
 
 MIT © [tsamantanis](https://github.com/tsamantanis)
