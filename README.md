@@ -20,7 +20,7 @@ npm install --save @tsamantanis/react-glassmorphism
 ```tsx
 import React, { Component } from 'react'
 
-import Button from '@tsamantanis/react-glassmorphism'
+import { Button } from '@tsamantanis/react-glassmorphism'
 import '@tsamantanis/react-glassmorphism/dist/index.css'
 
 class Example extends Component {
@@ -33,7 +33,7 @@ class Example extends Component {
 ```tsx
 import React, { Component } from 'react'
 
-import CustomCard from '@tsamantanis/react-glassmorphism'
+import { CustomCard } from '@tsamantanis/react-glassmorphism'
 import '@tsamantanis/react-glassmorphism/dist/index.css'
 
 class Example extends Component {
