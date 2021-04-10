@@ -3,7 +3,13 @@ import '@tsamantanis/react-glassmorphism/dist/index.css'
 
 const App = () => {
     return (
-        <div style={{background: "linear-gradient(153.43deg, #00E4E4 0%, #C780FF 83.33%)", padding: "5rem", height: '120vh'}}>
+        <div style={{background: "linear-gradient(153.43deg, #00E4E4 0%, #C780FF 83.33%)", padding: "5rem", height: '200vh'}}>
+            <div className="heading" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', height: '70vh'}}>
+                <div className="heading-container">
+                    <h1 style={{ fontSize: '3.5rem'}}>Welcome to the coolest <br />glassmorphism library</h1>
+                    <div style={{position: 'absolute', marginLeft: '150px', marginTop: '-100px'}}><Card blur={3}/><div style={{minWidth: '270px'}}/></div>
+                </div>
+            </div>
             <h1>Cards</h1>
             <div className="container">
                 <Card>
