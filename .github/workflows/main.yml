@@ -1,4 +1,3 @@
-// .github/workflows.yml
 name: NPM publish CD workflow
 
 on:
