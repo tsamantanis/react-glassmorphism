@@ -26,7 +26,7 @@ jobs:
       # build the project
       - run: npm run build
       # run tests just in case
-      - run: npm test
+      # - run: npm test
       - run: npm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
       # publish to NPM -> there is one caveat, continue reading for the fix
       - run: npm publish --tag ${{ github.event.release.target_commitish }}
