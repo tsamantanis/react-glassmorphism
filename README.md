@@ -52,6 +52,11 @@ class Example extends Component {
     }
 }
 ```
+
+## Contributions
+
+If you are interested in contributing to this project, please open an issue with a description of what you would like to add.
+
 ## License
 
 MIT © [tsamantanis](https://github.com/tsamantanis)
